@@ -12,7 +12,7 @@ CREATE TABLE `customers` (
   `stbNumber` text NOT NULL,
   `subsid` text NOT NULL,
   `stbid` text NOT NULL,
-  `balance_amt` text NOT NULL,
+  `balance_amt` FLOAT(23,19) NOT NULL,
   `setTopBoxStatus` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
 ALTER TABLE `customers`

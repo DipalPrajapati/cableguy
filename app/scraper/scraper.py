@@ -128,6 +128,11 @@ def loadSettings():
 def dumpToDatabase(info):
 	settings = loadSettings()
 	#Connect with database
+	balance_amount = info['balanceAmt']
+	if balance_amount == "Not Found":
+		balance_amount = 0
+	else:
+		balance_amount = float(balance_amount)
 	connection = pymysql.connect(host=settings['database']['host'],
                              user=settings['database']['username'],
                              password=settings['database']['password'],
@@ -150,7 +155,7 @@ def dumpToDatabase(info):
 				info['stbNumber'],
 				info['subsid'],
 				info['stbid'],
-				info['balanceAmt'],
+				balance_amount,
 				info['setTopBoxStatus'],
 				)
 			)
