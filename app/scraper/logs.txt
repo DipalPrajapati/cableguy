@@ -32,3 +32,11 @@ Traceback (most recent call last):
 BrokenPipeError: [Errno 32] Broken pipe
 INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.217.84.186
 INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.217.84.186
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (2): 103.217.84.186
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (2): 103.217.84.186
+Traceback (most recent call last):
+  File "/home/sam786/MEGA/sites/cableguy/app/scraper/scraper.py", line 296, in <module>
+    run()
+  File "/home/sam786/MEGA/sites/cableguy/app/scraper/scraper.py", line 250, in run
+    print ("-------------------------PAGE" + str(i) + "------------------------------")
+BrokenPipeError: [Errno 32] Broken pipe

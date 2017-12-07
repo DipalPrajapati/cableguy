@@ -15,7 +15,7 @@ class ScraperController extends Controller
          );
         $cwd = $script_path . '/';
         $process = proc_open('/usr/bin/python3 ' . $script_path . '/scraper.py', $descriptorspec, $pipes, $cwd);
-        $file = file_put_contents($script_path . '/process.txt',$process);
+        // $file = file_put_contents($script_path . '/process.txt',$process);
         return redirect() -> back();
     }
 
