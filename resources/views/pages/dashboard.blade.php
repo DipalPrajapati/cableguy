@@ -9,6 +9,17 @@
 
     <br>
     <div class="container">
+        <form action="" method="get">
+            <div class="input-group">
+                <select name="sort" class="form-control">
+                    <option value="balance_amt_desc">Balance Amount (Descending)</option>
+                    <option value="balance_amt_asc">Balance Amount (Ascending)</option>
+                </select>
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">Go!</button>
+                </div>
+            </div>
+        </form>
         @if(Session::has('status'))
             <div class="alert alert-success">{{Session::get('status')}}</div>
         @endif
@@ -53,7 +64,7 @@
                 <tbody>
             </table>
         </form>
-        {{$customers->links()}}
+        {{$customers->appends(\Input::except('page'))->render()}}
     </div>
 
 @endsection
