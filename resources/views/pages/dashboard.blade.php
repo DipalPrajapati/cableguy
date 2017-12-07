@@ -9,6 +9,14 @@
 
     <br>
     <div class="container">
+        <form action="search" method="get">
+            <div class="input-group">
+                <input class="form-control" name="q" type="text" placeholder="Search STB Number">
+                <div class="input-group-btn">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form> 
         <form action="" method="get">
             <div class="input-group">
                 <select name="sort" class="form-control">
@@ -58,7 +66,7 @@
                             <td>{{$customer->subscriberStatus}}</td>
                             <td>{{$customer->setTopBoxStatus}}</td>
                             <td>{{$customer->stbNumber}}</td>
-                            <td>{{$customer->balance_amt}}</td>
+                            <td>{{number_format($customer->balance_amt,2)}}</td>
                         </tr>
                     @endforeach
                 <tbody>

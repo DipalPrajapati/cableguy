@@ -29,5 +29,8 @@ Route::post('/deactivate','DeactivationController@deactivate');
 //Reload Route
 Route::get('/reloadScraper','ScraperController@reloadRecords');
 
+//Search Routes
+Route::get('/search','DashboardController@search');
+
 //Doesn't Work
 // Route::get('/stopScraper','ScraperController@stopScraper');
