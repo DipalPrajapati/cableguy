@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/home/sam786/MEGA/sites/cableguy/app/scraper/scraper.py", line 295, in <module>
+    run()
+  File "/home/sam786/MEGA/sites/cableguy/app/scraper/scraper.py", line 239, in run
+    emptyTable()
+  File "/home/sam786/MEGA/sites/cableguy/app/scraper/scraper.py", line 204, in emptyTable
+    cursor.execute(sql)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 1057, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cableguy.customers' doesn't exist")
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.217.84.186
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.217.84.186
+Traceback (most recent call last):
+  File "/home/sam786/MEGA/sites/cableguy/app/scraper/scraper.py", line 296, in <module>
+    run()
+  File "/home/sam786/MEGA/sites/cableguy/app/scraper/scraper.py", line 250, in run
+    print ("-------------------------PAGE" + str(i) + "------------------------------")
+BrokenPipeError: [Errno 32] Broken pipe
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.217.84.186
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 103.217.84.186

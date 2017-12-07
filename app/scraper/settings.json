@@ -1,0 +1,16 @@
+{
+	"database": {
+		"host": "localhost",
+		"username": "sam786",
+		"password": "sameer123",
+		"db": "cableguy",
+		"table": "customers"
+	},
+	"settings": {
+		"pages": "26"
+	},
+	"credentials": {
+		"username": "prashant",
+		"password": "123456"
+	}
+}
